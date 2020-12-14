@@ -41,6 +41,7 @@ class MainWindow(QMainWindow, main_ui):
 
         # 키패드 수 최소 2X2부터 시작
         self.size.setMinimum(2)
+        self.size.setValue(3)
         self.size.valueChanged.connect(self.spinBoxChanged)
 
         self.main_page()
