@@ -17,9 +17,9 @@ class Game():
     # UI에서 question패널 num번의 키패드 반짝이게
     def highlightKey(self, num):
         button = self.window.getButton("question", num)
-        button.setStyleSheet('background:black')
+        button.setStyleSheet('background:#A3AFC9')
         time.sleep(0.5)
-        button.setStyleSheet('background:white')
+        button.setStyleSheet('background:#D9E5FF')
 
     # order 순서대로 화면의 키패드 출력 - 0.5초 간격
     def showKeys(self, order):
@@ -60,7 +60,7 @@ class Game():
 
     # 게임 결과 불러오기 - 결과를 UI에 표시
     def getResult(self):
-        self.window.total_score.setText(str(self.level))
+        self.window.total_score.setText(str(self.level - 1))
         self.window.stackedWidget.setCurrentIndex(3)
 
     # 게임 데이터 초기화

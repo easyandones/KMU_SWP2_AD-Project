@@ -13,7 +13,7 @@ main_ui = uic.loadUiType('MainWindow.ui')[0]
 class Button(QToolButton):
     def __init__(self, key, callback):
         super().__init__()
-        self.setStyleSheet('background:white')
+        self.setStyleSheet('background:#D9E5FF')
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.key = key
 
